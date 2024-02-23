@@ -41,14 +41,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
-    name: Working with artifacts
-on: workflow_dispatch 
-env:
-  file_name: artifact_body.txt
-  path: ./
-  artifact_name: artifact_1
+    
 
- - name: Upload artifact
+     - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./
